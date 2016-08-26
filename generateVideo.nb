@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[    200714,       4911]
-NotebookOptionsPosition[    197665,       4809]
-NotebookOutlinePosition[    198162,       4828]
-CellTagsIndexPosition[    198119,       4825]
+NotebookDataLength[    205313,       4994]
+NotebookOptionsPosition[    202220,       4891]
+NotebookOutlinePosition[    202715,       4910]
+CellTagsIndexPosition[    202672,       4907]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -293,8 +293,8 @@ Cell[BoxData[
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"Precision", "[", "wp2", "]"}], ";"}], "\[IndentingNewLine]", 
-  "\[IndentingNewLine]"}], "\n", 
+   RowBox[{"Precision", "[", "wp2", "]"}], ";"}], "\n", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"eta", "=", 
    RowBox[{
@@ -418,8 +418,8 @@ Cell[BoxData[{
         RowBox[{"vy", "[", "t", "]"}]}], "+", 
        RowBox[{
         RowBox[{"z", "[", "t", "]"}], "*", 
-        RowBox[{"vz", "[", "t", "]"}]}]}], ")"}], "/", "ro"}]}], ";"}], 
-  "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\n", 
+        RowBox[{"vz", "[", "t", "]"}]}]}], ")"}], "/", "ro"}]}], ";"}], "\n", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"SL1", "[", "t_", "]"}], "=", 
@@ -2393,7 +2393,8 @@ Cell[BoxData[{
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Show", "[", 
-   RowBox[{"big", ",", "little"}], "]"}], "\n", "\[IndentingNewLine]", 
+   RowBox[{"big", ",", "little"}], "]"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", "\[IndentingNewLine]", 
    RowBox[{"ParametricPlot3D", "[", 
     RowBox[{
@@ -2436,8 +2437,7 @@ Cell[BoxData[{
           RowBox[{"{", 
            RowBox[{
             RowBox[{"-", "0.001"}], ",", "0.001"}], "}"}]}], "}"}]}]}], 
-      "]"}]}]}], "*)"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+      "]"}]}]}], "*)"}], "\n"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.4064719838229237`*^9, 3.4064721500863457`*^9}, 
    3.406472188527895*^9, 3.406472299155677*^9, {3.4064724730099277`*^9, 
    3.406472488121312*^9}, 3.406472810879397*^9, {3.4064728583083563`*^9, 
@@ -3313,7 +3313,49 @@ Cell[CellGroupData[{
 Cell["Compute, Generate, & Export Audio", "Section",
  CellChangeTimes->{{3.54672129860945*^9, 3.546721301232544*^9}, {
   3.546721615406811*^9, 3.546721618764999*^9}, {3.5467217643855*^9, 
-  3.546721769480785*^9}}],
+  3.546721769480785*^9}, {3.6812280701361628`*^9, 3.6812280714530888`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{"Length", "[", "tryit", "]"}], "/", "framerate"}], "]"}], 
+     "\[IndentingNewLine]", "actualLength"}], " ", "=", " ", 
+    RowBox[{"30.533333333333335", "\[IndentingNewLine]", 
+     RowBox[{"framerate", "=", "30"}]}]}], ";", "\[IndentingNewLine]", 
+   RowBox[{"numFrames", " ", "=", 
+    RowBox[{"desiredApproxLength", "*", "framerate"}]}], ";", 
+   "\[IndentingNewLine]", 
+   RowBox[{"dt", "=", 
+    RowBox[{"Floor", "[", 
+     RowBox[{"totalNumSteps", "/", "numFrames"}], "]"}]}]}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Doing", " ", "this", " ", "to", " ", "make", " ", "audio", " ", 
+     "debugging", " ", "smoother", " ", "without", " ", "re"}], "-", 
+    RowBox[{"rendering", " ", "the", " ", "video", " ", "every", " ", 
+     RowBox[{"time", "."}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  "*)"}]], "Input",
+ CellChangeTimes->{
+  3.4457180697055807`*^9, {3.4457218067410717`*^9, 3.445721818531765*^9}, 
+   3.4457219874317923`*^9, {3.4656461209271584`*^9, 3.465646154762096*^9}, {
+   3.4656461858816633`*^9, 3.465646231358642*^9}, {3.465646546927328*^9, 
+   3.465646559093206*^9}, {3.465647578637212*^9, 3.465647581964172*^9}, {
+   3.466676641243778*^9, 3.466676641587474*^9}, {3.466676706129899*^9, 
+   3.466676709336268*^9}, {3.467911967958269*^9, 3.467912018690027*^9}, {
+   3.468495076288838*^9, 3.468495109542138*^9}, {3.4684951678034983`*^9, 
+   3.468495189772037*^9}, {3.468495220429283*^9, 3.468495238876711*^9}, {
+   3.46849556204781*^9, 3.468495563542247*^9}, {3.4719016451887903`*^9, 
+   3.471901672496291*^9}, {3.507407019954781*^9, 3.5074070527288427`*^9}, {
+   3.660521150289253*^9, 3.6605212160283117`*^9}, {3.68122805775863*^9, 
+   3.6812280766733837`*^9}, {3.681228107037252*^9, 3.6812281932425337`*^9}, {
+   3.6812285687423353`*^9, 3.681228569121683*^9}, {3.681241369388238*^9, 
+   3.681241420769552*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -3322,8 +3364,8 @@ Cell[BoxData[
     RowBox[{"gravewave", " ", 
      RowBox[{"part", ".", " ", "Same"}], " ", "as", " ", "the", " ", 
      "gravewave", " ", "part", " ", "nested", " ", "in", " ", "the", " ", 
-     "first", " ", "cell"}], "*)"}], "Subsubtitle"], "\n", 
-  "\[IndentingNewLine]", 
+     "first", " ", "cell"}], "*)"}], "Subsubtitle"], "\[IndentingNewLine]", 
+  StyleBox["\[IndentingNewLine]", "Subsubtitle"], 
   RowBox[{
    RowBox[{
     RowBox[{"Dist", "=", "1"}], ";"}], "\[IndentingNewLine]", 
@@ -4059,7 +4101,9 @@ Cell[BoxData[
    3.468495189772037*^9}, {3.468495220429283*^9, 3.468495238876711*^9}, {
    3.46849556204781*^9, 3.468495563542247*^9}, {3.4719016451887903`*^9, 
    3.471901672496291*^9}, {3.507407019954781*^9, 3.5074070527288427`*^9}, {
-   3.660521150289253*^9, 3.6605212160283117`*^9}}],
+   3.660521150289253*^9, 3.6605212160283117`*^9}, {3.68122805775863*^9, 
+   3.6812280766733837`*^9}, {3.681228220235187*^9, 3.681228221211899*^9}, {
+   3.681228361349777*^9, 3.681228361878912*^9}}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
@@ -4072,7 +4116,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"sound2", "[", "T_", "]"}], ":=", 
      RowBox[{
-      SuperscriptBox["10", "6"], 
+      SuperscriptBox["10", "9"], 
       RowBox[{
        RowBox[{"sound1", "[", "T", "]"}], "[", 
        RowBox[{"[", "1", "]"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
@@ -4088,12 +4132,11 @@ Cell[BoxData[
     RowBox[{"amplitudes", " ", "=", 
      RowBox[{
       RowBox[{
-       RowBox[{"10", "*", 
-        RowBox[{"sound2", "[", "#", "]"}]}], "&"}], "/@", " ", 
+       RowBox[{"sound2", "[", "#", "]"}], "&"}], "/@", " ", 
       RowBox[{"Range", "[", 
        RowBox[{"10", ",", "end", ",", 
         RowBox[{"dt", "/", "300"}]}], "]"}]}]}], ";"}], "\[IndentingNewLine]",
-    "\n", 
+    "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
      RowBox[{
@@ -4114,13 +4157,18 @@ Cell[BoxData[
    RowBox[{"soundtry", "=", 
     RowBox[{"ListPlay", "[", 
      RowBox[{"amplitudes", ",", " ", 
-      RowBox[{"SampleRate", "\[Rule]", "41000"}]}], "]"}]}], 
+      RowBox[{"SampleRate", "\[Rule]", "44100"}]}], "]"}]}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
-   RowBox[{"unscaledSound", "=", 
-    RowBox[{"Sound", "[", "soundtry", "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"unscaledSound", "=", 
+     RowBox[{"Sound", "[", "soundtry", "]"}]}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{"scaledSound", " ", "=", " ", 
     RowBox[{"Sound", "[", 
-     RowBox[{"soundtry", ",", "actualLength"}], "]"}]}]}]}]], "Input",
+     RowBox[{"soundtry", ",", "actualLength"}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"shiftedSound", "=", 
+    RowBox[{"AudioFrequencyShift", "[", 
+     RowBox[{"scaledSound", ",", " ", "500"}], "]"}]}]}]}]], "Input",
  CellChangeTimes->{{3.470153822067927*^9, 3.47015387423979*^9}, {
    3.470154006090386*^9, 3.470154013366872*^9}, {3.470154412467589*^9, 
    3.4701544337928667`*^9}, {3.470154560782447*^9, 3.4701545741187773`*^9}, {
@@ -4226,21 +4274,54 @@ Cell[BoxData[
    3.660528762658482*^9, 3.660528766795395*^9}, {3.681052544492715*^9, 
    3.6810525567362013`*^9}, {3.68105263505192*^9, 3.68105270490834*^9}, {
    3.68105275398601*^9, 3.68105275454525*^9}, {3.681053492769086*^9, 
-   3.681053498164146*^9}}],
+   3.681053498164146*^9}, {3.681228690837242*^9, 3.681228724956428*^9}, 
+   3.681228923975717*^9, {3.681228964432803*^9, 3.681228969136115*^9}, {
+   3.6812294707387247`*^9, 3.681229473995274*^9}, {3.681230699017166*^9, 
+   3.681230699509001*^9}, {3.6812309573280973`*^9, 3.681230981948756*^9}, {
+   3.6812310761230707`*^9, 3.681231079482423*^9}, {3.681231127693454*^9, 
+   3.68123113225851*^9}, {3.681231216319255*^9, 3.681231217654917*^9}, {
+   3.681231338180849*^9, 3.6812313418907537`*^9}, {3.6812316548790483`*^9, 
+   3.6812316581137457`*^9}, {3.681231699996786*^9, 3.6812317013530703`*^9}, {
+   3.68123185617137*^9, 3.681231858444846*^9}, 3.681231922969112*^9, {
+   3.6812321051732407`*^9, 3.681232107848259*^9}, {3.6812322177308083`*^9, 
+   3.6812322187558527`*^9}, {3.681232345624679*^9, 3.681232394070374*^9}, {
+   3.681237053073949*^9, 3.681237056768216*^9}, {3.681237138167791*^9, 
+   3.681237138362123*^9}, {3.681237561812851*^9, 3.681237567447825*^9}, {
+   3.681237746882017*^9, 3.681237746979074*^9}, {3.6812379273891573`*^9, 
+   3.6812379279694233`*^9}, {3.681238182318283*^9, 3.681238183328868*^9}, {
+   3.6812383878783007`*^9, 3.681238388883428*^9}, {3.681238547036173*^9, 
+   3.681238548946116*^9}, {3.6812387589412947`*^9, 3.681238759158991*^9}, {
+   3.681239132508821*^9, 3.6812391505504923`*^9}, 3.6812393111357803`*^9, {
+   3.681239660873177*^9, 3.681239671349227*^9}, {3.6812399755093107`*^9, 
+   3.68123997583339*^9}, {3.681240174769332*^9, 3.681240177235899*^9}, {
+   3.6812405003447447`*^9, 3.6812405006259117`*^9}, {3.681240924042087*^9, 
+   3.681240924722354*^9}, {3.6812411155975122`*^9, 3.68124111596708*^9}, {
+   3.6812413010091057`*^9, 3.6812413025721893`*^9}}],
 
-Cell[BoxData[{
- RowBox[{"originalAudioOutput", " ", "=", " ", 
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"originalAudioOutput", " ", "=", " ", 
+    RowBox[{"outputFolder", "<>", "\"\<audio.wav\>\""}]}], "*)"}], 
+  "\[IndentingNewLine]", 
   RowBox[{
-  "outputFolder", "<>", "\"\<audio.wav\>\""}]}], "\[IndentingNewLine]", 
- RowBox[{"scaledAudioOutput", " ", "=", " ", 
-  RowBox[{
-  "outputFolder", "<>", "\"\<audioScaled.wav\>\""}]}], "\[IndentingNewLine]", 
- RowBox[{"Export", "[", 
-  RowBox[{"originalAudioOutput", ",", "soundtry", ",", "\"\<WAV\>\""}], 
-  "]"}], "\[IndentingNewLine]", 
- RowBox[{"Export", "[", 
-  RowBox[{"scaledAudioOutput", ",", "scaledSound", ",", "\"\<WAV\>\""}], 
-  "]"}]}], "Input",
+   RowBox[{"scaledAudioOutput", " ", "=", " ", 
+    RowBox[{"outputFolder", "<>", "\"\<audioScaled.wav\>\""}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"shiftedAudioOutput", " ", "=", " ", 
+    RowBox[{"outputFolder", "<>", "\"\<audioShifted.wav\>\""}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Export", "[", 
+     RowBox[{"originalAudioOutput", ",", "soundtry", ",", "\"\<WAV\>\""}], 
+     "]"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Export", "[", 
+    RowBox[{"scaledAudioOutput", ",", "scaledSound", ",", "\"\<WAV\>\""}], 
+    "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Export", "[", 
+    RowBox[{
+    "shiftedAudioOutput", ",", " ", "shiftedSound", ",", " ", "\"\<WAV\>\""}],
+     "]"}]}]}]], "Input",
  CellChangeTimes->{
   3.5479973860951395`*^9, {3.5491613526979513`*^9, 3.5491613551490917`*^9}, {
    3.681045015882801*^9, 3.68104501629469*^9}, {3.681045049383444*^9, 
@@ -4249,7 +4330,9 @@ Cell[BoxData[{
    3.681046584556759*^9, 3.681046586541706*^9}, {3.681047968442132*^9, 
    3.68104797487327*^9}, {3.681050280463688*^9, 3.6810502824496393`*^9}, {
    3.681052719853215*^9, 3.6810527459555693`*^9}, {3.681052797528618*^9, 
-   3.6810528388864594`*^9}, {3.681053507629109*^9, 3.6810535111286297`*^9}}]
+   3.6810528388864594`*^9}, {3.681053507629109*^9, 3.6810535111286297`*^9}, {
+   3.681231036154778*^9, 3.6812310723828573`*^9}, {3.681231666005875*^9, 
+   3.681231676286689*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -4576,8 +4659,8 @@ Cell[BoxData[
     RowBox[{"DisplayAllSteps", "\[Rule]", "True"}], ",", 
     RowBox[{"AnimationDirection", "\[Rule]", "Forward"}], ",", 
     RowBox[{"AnimationRate", "\[Rule]", "500000"}], ",", 
-    RowBox[{"AnimationRepetitions", "\[Rule]", "1"}]}], "]"}], "*)"}]], \
-"Input",
+    RowBox[{"AnimationRepetitions", "\[Rule]", "1"}]}], "]"}], 
+  "*)"}]], "Input",
  CellChangeTimes->{
   3.681045982237255*^9, {3.681051754801524*^9, 3.681051762725212*^9}}],
 
@@ -4625,22 +4708,20 @@ Cell["Merge Audio & Video", "Section",
  CellChangeTimes->{{3.5468853839612617`*^9, 3.5468853925797553`*^9}, {
   3.5473991996656165`*^9, 3.5473992267504263`*^9}}],
 
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Program", " ", "=", " ", "\"\</usr/local/bin/ffmpeg\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mergedVideoOutput", " ", "=", " ", 
+   RowBox[{"outputFolder", "<>", "\"\<combined.mkv\>\""}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"mergeCommand", " ", "=", " ", 
   RowBox[{
-   RowBox[{
-    RowBox[{"Program", " ", "=", " ", "\"\</usr/local/bin/ffmpeg\>\""}], 
-    ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"mergedVideoOutput", " ", "=", " ", 
-     RowBox[{"outputFolder", "<>", "\"\<mergedFFmpeg.avi\>\""}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"mergeCommand", " ", "=", " ", 
-    RowBox[{
-    "Program", "<>", "\"\< -i \>\"", "<>", "doubleVideoOutput", "<>", 
-     "\"\< -i \>\"", "<>", "scaledAudioOutput", "<>", 
-     "\"\< -y -acodec libmp3lame -b:a 128k -ar 44100 -vcodec libx264 -qmax 20 \
- \>\"", "<>", "mergedVideoOutput"}]}]}]}]], "Input",
+  "Program", "<>", "\"\< -i \>\"", "<>", "doubleVideoOutput", "<>", 
+   "\"\< -i \>\"", "<>", "shiftedAudioOutput", "<>", 
+   "\"\< -c:v libx264 -preset veryslow -c:a libvorbis \>\"", "<>", 
+   "mergedVideoOutput"}]}]}], "Input",
  CellChangeTimes->{{3.547399374400813*^9, 3.5473994008872843`*^9}, {
    3.547399457592495*^9, 3.5473996829881625`*^9}, {3.5473997463309665`*^9, 
    3.547399792100484*^9}, {3.547399831871512*^9, 3.5473998688497705`*^9}, {
@@ -4660,7 +4741,8 @@ Cell[BoxData[
    3.681048331310759*^9, 3.6810483318911867`*^9}, {3.6810492146663647`*^9, 
    3.681049214908168*^9}, 3.681050346889852*^9, {3.68105154632547*^9, 
    3.681051549667276*^9}, {3.6810536192511263`*^9, 3.681053622783049*^9}, {
-   3.681053709540518*^9, 3.681053715957591*^9}}],
+   3.681053709540518*^9, 3.681053715957591*^9}, {3.681241179109289*^9, 
+   3.681241219117697*^9}, {3.681241319972313*^9, 3.681241320240143*^9}}],
 
 Cell[BoxData[
  RowBox[{"If", "[", 
@@ -4812,8 +4894,8 @@ WindowMargins->{{0, Automatic}, {Automatic, 0}},
 PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
 CellEpilog:>SelectionMove[
   EvaluationNotebook[], Next, Cell],
-FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 9, \
-2015)",
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
+2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -4827,18 +4909,18 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[400, 13, 271, 6, 78, "Input"],
+Cell[400, 13, 271, 6, 82, "Input"],
 Cell[674, 21, 876, 18, 60, "Input"],
 Cell[CellGroupData[{
 Cell[1575, 43, 129, 1, 64, "Section"],
-Cell[1707, 46, 663, 12, 28, "Input"],
+Cell[1707, 46, 663, 12, 32, "Input"],
 Cell[CellGroupData[{
 Cell[2395, 62, 124, 2, 44, "Subsection"],
-Cell[2522, 66, 199, 4, 28, "Input"]
+Cell[2522, 66, 199, 4, 32, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2758, 75, 153, 2, 44, "Subsection"],
-Cell[2914, 79, 778, 18, 80, "Input"]
+Cell[2914, 79, 778, 18, 96, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[3729, 102, 124, 2, 44, "Subsection"],
@@ -4846,64 +4928,65 @@ Cell[3856, 106, 648, 11, 32, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[4541, 122, 134, 2, 44, "Subsection"],
-Cell[4678, 126, 833, 21, 63, "Input"]
+Cell[4678, 126, 833, 21, 75, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[5548, 152, 132, 2, 44, "Subsection"],
-Cell[5683, 156, 1402, 38, 137, "Input"]
+Cell[5683, 156, 1402, 38, 159, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[7122, 199, 124, 2, 44, "Subsection"],
-Cell[7249, 203, 266, 4, 28, "Item"],
-Cell[7518, 209, 944, 14, 28, "Input"],
-Cell[8465, 225, 250, 4, 28, "Item"],
-Cell[8718, 231, 1324, 22, 28, "Input"],
-Cell[10045, 255, 284, 5, 28, "Item"],
-Cell[10332, 262, 557, 9, 28, "Input"]
+Cell[7249, 203, 266, 4, 30, "Item"],
+Cell[7518, 209, 944, 14, 32, "Input"],
+Cell[8465, 225, 250, 4, 30, "Item"],
+Cell[8718, 231, 1324, 22, 32, "Input"],
+Cell[10045, 255, 284, 5, 30, "Item"],
+Cell[10332, 262, 557, 9, 32, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[10938, 277, 101, 1, 51, "Subtitle"],
 Cell[CellGroupData[{
 Cell[11064, 282, 157, 2, 64, "Section"],
-Cell[11224, 286, 182, 4, 28, "Input"],
-Cell[11409, 292, 106454, 2612, 4485, "Input"],
-Cell[117866, 2906, 1203, 34, 123, "Input"]
+Cell[11224, 286, 182, 4, 32, "Input"],
+Cell[11409, 292, 106454, 2612, 5422, "Input"],
+Cell[117866, 2906, 1203, 34, 134, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[119106, 2945, 210, 3, 64, "Section"],
-Cell[119319, 2950, 1265, 27, 97, "Input"],
-Cell[120587, 2979, 6988, 133, 182, "Input"]
+Cell[119319, 2950, 1265, 27, 117, "Input"],
+Cell[120587, 2979, 6988, 133, 222, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[127612, 3117, 334, 4, 64, "Section"],
-Cell[127949, 3123, 8524, 184, 352, "Input"]
+Cell[127949, 3123, 8524, 184, 432, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[136510, 3312, 213, 3, 64, "Section"],
-Cell[136726, 3317, 26301, 744, 1147, "Input"],
-Cell[163030, 4063, 9899, 165, 256, "Input"],
-Cell[172932, 4230, 1147, 21, 80, "Input"]
+Cell[136510, 3312, 263, 3, 64, "Section"],
+Cell[136776, 3317, 1995, 40, 159, "Input"],
+Cell[138774, 3359, 26490, 746, 1361, "Input"],
+Cell[165267, 4107, 11738, 191, 329, "Input"],
+Cell[177008, 4300, 1645, 34, 138, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[174116, 4256, 307, 4, 64, "Section"],
-Cell[174426, 4262, 4046, 91, 131, "Input"],
-Cell[178475, 4355, 2468, 67, 83, "Input"],
-Cell[180946, 4424, 3476, 85, 115, "Input"],
-Cell[184425, 4511, 2643, 70, 104, "Input"],
-Cell[187071, 4583, 2011, 35, 63, "Input"]
+Cell[178690, 4339, 307, 4, 64, "Section"],
+Cell[179000, 4345, 4046, 91, 159, "Input"],
+Cell[183049, 4438, 2468, 67, 85, "Input"],
+Cell[185520, 4507, 3476, 85, 138, "Input"],
+Cell[188999, 4594, 2644, 70, 108, "Input"],
+Cell[191646, 4666, 2011, 35, 75, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[189119, 4623, 161, 2, 64, "Section"],
-Cell[189283, 4627, 2153, 35, 114, "Input"],
-Cell[191439, 4664, 482, 9, 28, "Input"],
-Cell[191924, 4675, 825, 21, 46, "Input"]
+Cell[193694, 4706, 161, 2, 64, "Section"],
+Cell[193858, 4710, 2133, 34, 75, "Input"],
+Cell[195994, 4746, 482, 9, 32, "Input"],
+Cell[196479, 4757, 825, 21, 54, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[192786, 4701, 103, 1, 64, "Section"],
-Cell[192892, 4704, 178, 4, 28, "Input"],
-Cell[193073, 4710, 406, 6, 28, "Input"],
-Cell[193482, 4718, 4155, 87, 352, "Input"]
+Cell[197341, 4783, 103, 1, 64, "Section"],
+Cell[197447, 4786, 178, 4, 32, "Input"],
+Cell[197628, 4792, 406, 6, 32, "Input"],
+Cell[198037, 4800, 4155, 87, 432, "Input"]
 }, Open  ]]
 }, Open  ]]
 }

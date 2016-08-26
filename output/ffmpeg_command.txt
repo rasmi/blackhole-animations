@@ -1,0 +1,1 @@
+ffmpeg -i doubleVideo.mov -i audioShifted_500Hz.wav -c:v libx264 -preset veryslow -c:a libvorbis combined.mkv

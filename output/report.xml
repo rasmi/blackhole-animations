@@ -1,0 +1,18 @@
+<Simulation_Report>
+ <Initial_Parameters>
+  <Run_Name>name</Run_Name>
+  <Start_Date_Time>Wed 24 Aug 2016 15:01:50</Start_Date_Time>
+  <Mass_Ratio>3
+--
+10</Mass_Ratio>
+  <Initial_Radius>20</Initial_Radius>
+ </Initial_Parameters>
+ <Results>
+  <End_Date_Time>Wed 24 Aug 2016 15:10:23</End_Date_Time>
+  <Total_Number_of_Steps>25632.8</Total_Number_of_Steps>
+  <Num_Times_Crossed_X-Axis>100</Num_Times_Crossed_X-Axis>
+  <Real_Time_Value_[seconds]>2.52739</Real_Time_Value_[seconds]>
+  <Initial_Eccentricity>0.147702</Initial_Eccentricity>
+  <Final_Run_Status>Successful</Final_Run_Status>
+ </Results>
+</Simulation_Report>
