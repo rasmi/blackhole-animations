@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[    198041,       4866]
-NotebookOptionsPosition[    195036,       4766]
-NotebookOutlinePosition[    195469,       4783]
-CellTagsIndexPosition[    195426,       4780]
+NotebookDataLength[    200418,       4906]
+NotebookOptionsPosition[    197369,       4804]
+NotebookOutlinePosition[    197866,       4823]
+CellTagsIndexPosition[    197823,       4820]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -127,13 +127,14 @@ Cell["Initial Radius", "Subsection",
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"ri", " ", "=", " ", "20"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"ri", " ", "=", " ", "20"}], ";"}], "\n", 
   RowBox[{"(*", 
    RowBox[{
     RowBox[{"rdoti", "=", 
      RowBox[{"-", 
       RowBox[{"Sqrt", "[", 
-       RowBox[{"2", "/", "ri"}], "]"}]}]}], ";"}], "*)"}]}], "\n", 
+       RowBox[{"2", "/", "ri"}], "]"}]}]}], ";"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"rdoti", " ", "=", " ", "0"}], ";"}]}], "Input",
  CellChangeTimes->CompressedData["
@@ -292,8 +293,8 @@ Cell[BoxData[
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"Precision", "[", "wp2", "]"}], ";"}], "\[IndentingNewLine]", 
-  "\n"}], "\[IndentingNewLine]", 
+   RowBox[{"Precision", "[", "wp2", "]"}], ";"}], "\n", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"eta", "=", 
    RowBox[{
@@ -417,8 +418,8 @@ Cell[BoxData[{
         RowBox[{"vy", "[", "t", "]"}]}], "+", 
        RowBox[{
         RowBox[{"z", "[", "t", "]"}], "*", 
-        RowBox[{"vz", "[", "t", "]"}]}]}], ")"}], "/", "ro"}]}], ";"}], 
-  "\[IndentingNewLine]", "\n"}], "\[IndentingNewLine]", 
+        RowBox[{"vz", "[", "t", "]"}]}]}], ")"}], "/", "ro"}]}], ";"}], "\n", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"SL1", "[", "t_", "]"}], "=", 
@@ -469,7 +470,7 @@ Cell[BoxData[{
      RowBox[{
       RowBox[{"v", "[", "t", "]"}], ",", 
       RowBox[{"v", "[", "t", "]"}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"aN", "=", 
    RowBox[{"-", 
@@ -1618,7 +1619,7 @@ Cell[BoxData[{
   RowBox[{"yi", "=", "0"}], ";"}], "\n", 
  RowBox[{
   RowBox[{
-   RowBox[{"zi", "=", "0"}], ";"}], "\[IndentingNewLine]"}], "\n", 
+   RowBox[{"zi", "=", "0"}], ";"}], "\n"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"SL1xi", "=", 
    RowBox[{"SL1mi", "*", 
@@ -2392,8 +2393,7 @@ Cell[BoxData[{
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Show", "[", 
-   RowBox[{"big", ",", "little"}], "]"}], "\[IndentingNewLine]", 
-  "\[IndentingNewLine]", 
+   RowBox[{"big", ",", "little"}], "]"}], "\[IndentingNewLine]", "\n", 
   RowBox[{"(*", "\[IndentingNewLine]", 
    RowBox[{"ParametricPlot3D", "[", 
     RowBox[{
@@ -2405,8 +2405,8 @@ Cell[BoxData[{
         RowBox[{"z", "[", "t", "]"}]}], "}"}], "/.", "Lagbigsol"}], ",", 
      RowBox[{"{", 
       RowBox[{"t", ",", "0", ",", "TradL"}], "}"}], ",", 
-     RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}], "*)"}], "\n", 
-  "\[IndentingNewLine]", 
+     RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}], "*)"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
     RowBox[{"hTT12", "=", 
@@ -3115,13 +3115,22 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
-Cell["I added this to see the two black holes Dec. 30, 2015", "Section",
+Cell["Two Black Hole Collision in HD with Star Field Background", "Section",
  CellChangeTimes->{{3.54672129860945*^9, 3.546721301232544*^9}, {
   3.546721615406811*^9, 3.546721618764999*^9}, {3.5467217643855*^9, 
-  3.546721769480785*^9}, {3.660504334629817*^9, 3.660504355440638*^9}}],
+  3.546721769480785*^9}, {3.660504334629817*^9, 3.660504355440638*^9}, {
+  3.6811772676122637`*^9, 3.681177287637143*^9}}],
 
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{
+  RowBox[{"starField", " ", "=", " ", 
+   RowBox[{"Import", "[", " ", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+       "\"\<starfield_resized.jpg\>\""}], "}"}], "]"}], "]"}]}], 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
     RowBox[{
@@ -3152,95 +3161,106 @@ Cell[BoxData[
      RowBox[{"Round", "[", 
       RowBox[{
        RowBox[{"Length", "[", "tryit", "]"}], "/", "desiredApproxLength"}], 
-      "]"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"framerate", "=", "15"}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"numFrames", " ", "=", 
-     RowBox[{"desiredApproxLength", "*", "framerate"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"dt", "=", 
-    RowBox[{"Floor", "[", 
-     RowBox[{"totalNumSteps", "/", "numFrames"}], "]"}]}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"lim", "=", 
-     RowBox[{"ri", 
-      RowBox[{"(", "1.5", ")"}]}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"tryit", "=", 
-     RowBox[{"Table", "[", 
-      RowBox[{
-       RowBox[{"Rasterize", "[", 
-        RowBox[{"ParametricPlot3D", "[", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"m1", "*", 
-                 RowBox[{"x", "[", "t", "]"}]}], ",", 
-                RowBox[{"m1", "*", 
-                 RowBox[{"y", "[", "t", "]"}]}], ",", 
-                RowBox[{"m1", "*", 
-                 RowBox[{"z", "[", "t", "]"}]}]}], "}"}], "/.", "Lagbigsol"}],
-              "}"}], ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"-", "m2"}], "*", 
-                 RowBox[{"x", "[", "t", "]"}]}], ",", 
-                RowBox[{
-                 RowBox[{"-", "m2"}], "*", 
-                 RowBox[{"y", "[", "t", "]"}]}], ",", 
-                RowBox[{
-                 RowBox[{"-", "m2"}], "*", 
-                 RowBox[{"z", "[", "1", "]"}]}]}], "}"}], "/.", "Lagbigsol"}],
-              "}"}]}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"t", ",", "0", ",", "tan"}], "}"}], ",", 
-          RowBox[{"PlotRange", "\[Rule]", 
-           RowBox[{"{", 
+      "]"}]}], ";"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"framerate", "=", "30"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"numFrames", " ", "=", 
+   RowBox[{"desiredApproxLength", "*", "framerate"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dt", "=", 
+   RowBox[{"Floor", "[", 
+    RowBox[{"totalNumSteps", "/", "numFrames"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lim", "=", 
+   RowBox[{"ri", 
+    RowBox[{"(", "1.5", ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tryit", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"ImageCompose", "[", 
+      RowBox[{"starField", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Rasterize", "[", 
+          RowBox[{
+           RowBox[{"ParametricPlot3D", "[", 
             RowBox[{
              RowBox[{"{", 
               RowBox[{
-               RowBox[{"-", "lim"}], ",", "lim"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"m1", "*", 
+                    RowBox[{"x", "[", "t", "]"}]}], ",", 
+                   RowBox[{"m1", "*", 
+                    RowBox[{"y", "[", "t", "]"}]}], ",", 
+                   RowBox[{"m1", "*", 
+                    RowBox[{"z", "[", "t", "]"}]}]}], "}"}], "/.", 
+                 "Lagbigsol"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"-", "m2"}], "*", 
+                    RowBox[{"x", "[", "t", "]"}]}], ",", 
+                   RowBox[{
+                    RowBox[{"-", "m2"}], "*", 
+                    RowBox[{"y", "[", "t", "]"}]}], ",", 
+                   RowBox[{
+                    RowBox[{"-", "m2"}], "*", 
+                    RowBox[{"z", "[", "1", "]"}]}]}], "}"}], "/.", 
+                 "Lagbigsol"}], "}"}]}], "}"}], ",", 
              RowBox[{"{", 
-              RowBox[{
-               RowBox[{"-", "lim"}], ",", "lim"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
+              RowBox[{"t", ",", "0", ",", "tan"}], "}"}], ",", 
+             RowBox[{"PlotRange", "\[Rule]", 
+              RowBox[{"{", 
                RowBox[{
-                RowBox[{"-", "lim"}], "/", "2"}], ",", 
-               RowBox[{"lim", "/", "2"}]}], "}"}]}], "}"}]}], ",", 
-          RowBox[{"PlotPoints", "\[Rule]", "1000"}], ",", 
-          RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}], ",", 
-          RowBox[{"AspectRatio", "\[Rule]", "1"}], ",", 
-          RowBox[{"PlotStyle", "\[Rule]", 
-           RowBox[{"{", 
-            RowBox[{"Black", ",", "Red"}], "}"}]}]}], "]"}], "]"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"tan", ",", "10", ",", 
-         RowBox[{"end", "+", 
-          RowBox[{"dt", "/", "2.5"}]}], ",", "dt"}], "}"}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"actualLength", "=", 
-    RowBox[{"N", "[", 
-     RowBox[{
-      RowBox[{"Length", "[", "tryit", "]"}], "/", "framerate"}], "]"}]}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"doubleVideoOutput", "=", 
-    RowBox[{"outputFolder", "<>", "\"\<doubleVideo.avi\>\""}]}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"Export", "[", 
-    RowBox[{"doubleVideoOutput", ",", "tryit", ",", "\"\<avi\>\"", ",", 
-     RowBox[{"\"\<FrameRate\>\"", "\[Rule]", "framerate"}]}], 
-    "]"}]}]}]], "Input",
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"-", "lim"}], ",", "lim"}], "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"-", "lim"}], ",", "lim"}], "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", "lim"}], "/", "2"}], ",", 
+                  RowBox[{"lim", "/", "2"}]}], "}"}]}], "}"}]}], ",", 
+             RowBox[{"PlotPoints", "\[Rule]", "1000"}], ",", 
+             RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}], ",", 
+             RowBox[{"AspectRatio", "\[Rule]", "0.5625"}], ",", 
+             RowBox[{"PlotStyle", "\[Rule]", 
+              RowBox[{"{", 
+               RowBox[{"Red", ",", "Cyan"}], "}"}]}], ",", " ", 
+             RowBox[{"Axes", "\[Rule]", "False"}], ",", " ", 
+             RowBox[{"Ticks", "\[Rule]", " ", "None"}], ",", " ", 
+             RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}], ",", " ", 
+           RowBox[{"ImageResolution", "\[Rule]", "200"}], ",", 
+           RowBox[{"ImageSize", "\[Rule]", "1920"}], ",", " ", 
+           RowBox[{"Background", "\[Rule]", "None"}]}], "]"}], ",", " ", 
+         "0.6"}], "}"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"tan", ",", "10", ",", 
+       RowBox[{"end", "+", 
+        RowBox[{"dt", "/", "2.5"}]}], ",", "dt"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"actualLength", "=", 
+  RowBox[{"N", "[", 
+   RowBox[{
+    RowBox[{"Length", "[", "tryit", "]"}], "/", "framerate"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"doubleVideoOutput", "=", 
+  RowBox[{
+  "outputFolder", "<>", "\"\<doubleVideo.avi\>\""}]}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"doubleVideoOutput", ",", "tryit", ",", "\"\<avi\>\"", ",", 
+   RowBox[{"\"\<FrameRate\>\"", "\[Rule]", "framerate"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.660504392294182*^9, 3.6605044722046623`*^9}, {
    3.660504532008395*^9, 3.660504549418556*^9}, {3.660504593900873*^9, 
    3.660504614364931*^9}, {3.6605050487824306`*^9, 3.660505108952775*^9}, {
@@ -3262,7 +3282,25 @@ Cell[BoxData[
    3.681046378304723*^9}, 3.681046483141329*^9, {3.6810465413196077`*^9, 
    3.6810465546299343`*^9}, {3.6810478160679703`*^9, 
    3.6810478592893953`*^9}, {3.681049066520397*^9, 3.681049085650753*^9}, {
-   3.6810491359293213`*^9, 3.681049136006689*^9}}]
+   3.6810491359293213`*^9, 3.681049136006689*^9}, {3.681170401022777*^9, 
+   3.681170447617345*^9}, {3.6811710314108353`*^9, 3.68117103407876*^9}, {
+   3.6811715307349157`*^9, 3.681171546217636*^9}, {3.681171657736671*^9, 
+   3.681171676349195*^9}, {3.681172106275319*^9, 3.681172106541171*^9}, {
+   3.681172671391645*^9, 3.681172680219668*^9}, {3.6811731053626947`*^9, 
+   3.681173106658492*^9}, {3.681173155989595*^9, 3.681173184520507*^9}, {
+   3.681173846743554*^9, 3.6811738486597643`*^9}, {3.681173967646834*^9, 
+   3.6811739774423532`*^9}, {3.681174213256976*^9, 3.681174220680367*^9}, {
+   3.6811744101796713`*^9, 3.681174429171423*^9}, {3.681174625470443*^9, 
+   3.681174625939962*^9}, {3.681174689068124*^9, 3.6811747037990503`*^9}, {
+   3.681175195856436*^9, 3.68117520911558*^9}, {3.681175390997953*^9, 
+   3.681175398706676*^9}, {3.681175495050281*^9, 3.681175518199648*^9}, {
+   3.681175603915307*^9, 3.6811756389969597`*^9}, {3.681175741596245*^9, 
+   3.681175777696822*^9}, {3.6811758958988733`*^9, 3.681175926541354*^9}, {
+   3.681176078147088*^9, 3.681176080458117*^9}, {3.681176286986624*^9, 
+   3.681176328335664*^9}, {3.681176467897579*^9, 3.681176468874456*^9}, {
+   3.681176584252083*^9, 3.681176585075574*^9}, {3.6811767776606913`*^9, 
+   3.681176778364477*^9}, {3.6811769400749893`*^9, 3.681176943854147*^9}, {
+   3.6811772604929647`*^9, 3.681177262431485*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -4050,7 +4088,7 @@ Cell[BoxData[
       RowBox[{"Range", "[", 
        RowBox[{"10", ",", "end", ",", 
         RowBox[{"dt", "/", "300"}]}], "]"}]}]}], ";"}], "\[IndentingNewLine]",
-    "\[IndentingNewLine]", 
+    "\n", 
    RowBox[{"(*", " ", 
     RowBox[{
      RowBox[{
@@ -4067,7 +4105,7 @@ Cell[BoxData[
            RowBox[{"[", "1", "]"}], "]"}]}], ",", 
          RowBox[{"{", 
           RowBox[{"tan", ",", "10", ",", "200"}], "}"}]}], "]"}], ",", "10"}],
-       "]"}]}], "*)"}], "\n", "\[IndentingNewLine]", 
+       "]"}]}], "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"soundtry", "=", 
     RowBox[{"ListPlay", "[", 
      RowBox[{"amplitudes", ",", " ", 
@@ -4373,8 +4411,8 @@ Cell[BoxData[
     RowBox[{"DisplayAllSteps", "\[Rule]", "True"}], ",", 
     RowBox[{"AnimationDirection", "\[Rule]", "Forward"}], ",", 
     RowBox[{"AnimationRate", "\[Rule]", "500000"}], ",", 
-    RowBox[{"AnimationRepetitions", "\[Rule]", "1"}]}], "]"}], "*)"}]], \
-"Input",
+    RowBox[{"AnimationRepetitions", "\[Rule]", "1"}]}], "]"}], 
+  "*)"}]], "Input",
  CellChangeTimes->{
   3.681045965083497*^9, {3.681053527429041*^9, 3.6810535580412703`*^9}, {
    3.681053850148819*^9, 3.681053861953987*^9}}],
@@ -4767,6 +4805,8 @@ Cell[BoxData[
 WindowSize->{1436, 855},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+CellEpilog:>SelectionMove[
+  EvaluationNotebook[], Next, Cell],
 FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 9, \
 2015)",
 StyleDefinitions->"Default.nb"
@@ -4801,64 +4841,64 @@ Cell[3856, 106, 648, 11, 32, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[4541, 122, 134, 2, 44, "Subsection"],
-Cell[4678, 126, 833, 21, 63, "Input"]
+Cell[4678, 126, 837, 22, 63, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5548, 152, 132, 2, 44, "Subsection"],
-Cell[5683, 156, 1402, 38, 137, "Input"]
+Cell[5552, 153, 132, 2, 44, "Subsection"],
+Cell[5687, 157, 1402, 38, 137, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7122, 199, 124, 2, 44, "Subsection"],
-Cell[7249, 203, 266, 4, 28, "Item"],
-Cell[7518, 209, 944, 14, 28, "Input"],
-Cell[8465, 225, 250, 4, 28, "Item"],
-Cell[8718, 231, 1324, 22, 28, "Input"],
-Cell[10045, 255, 284, 5, 28, "Item"],
-Cell[10332, 262, 486, 8, 28, "Input"]
+Cell[7126, 200, 124, 2, 44, "Subsection"],
+Cell[7253, 204, 266, 4, 28, "Item"],
+Cell[7522, 210, 944, 14, 28, "Input"],
+Cell[8469, 226, 250, 4, 28, "Item"],
+Cell[8722, 232, 1324, 22, 28, "Input"],
+Cell[10049, 256, 284, 5, 28, "Item"],
+Cell[10336, 263, 486, 8, 28, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10867, 276, 101, 1, 51, "Subtitle"],
+Cell[10871, 277, 101, 1, 51, "Subtitle"],
 Cell[CellGroupData[{
-Cell[10993, 281, 157, 2, 64, "Section"],
-Cell[11153, 285, 182, 4, 28, "Input"],
-Cell[11338, 291, 106457, 2613, 4485, "Input"],
-Cell[117798, 2906, 1203, 34, 123, "Input"]
+Cell[10997, 282, 157, 2, 64, "Section"],
+Cell[11157, 286, 182, 4, 28, "Input"],
+Cell[11342, 292, 106454, 2612, 4485, "Input"],
+Cell[117799, 2906, 1203, 34, 123, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[119038, 2945, 210, 3, 64, "Section"],
-Cell[119251, 2950, 1265, 27, 97, "Input"],
-Cell[120519, 2979, 6988, 133, 182, "Input"]
+Cell[119039, 2945, 210, 3, 64, "Section"],
+Cell[119252, 2950, 1265, 27, 97, "Input"],
+Cell[120520, 2979, 6988, 133, 182, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[127544, 3117, 279, 3, 64, "Section"],
-Cell[127826, 3122, 6019, 142, 301, "Input"]
+Cell[127545, 3117, 334, 4, 64, "Section"],
+Cell[127882, 3123, 8295, 179, 352, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[133882, 3269, 213, 3, 64, "Section"],
-Cell[134098, 3274, 26301, 744, 1147, "Input"],
-Cell[160402, 4020, 9899, 165, 256, "Input"],
-Cell[170304, 4187, 1147, 21, 80, "Input"]
+Cell[136214, 3307, 213, 3, 64, "Section"],
+Cell[136430, 3312, 26301, 744, 1147, "Input"],
+Cell[162734, 4058, 9899, 165, 256, "Input"],
+Cell[172636, 4225, 1147, 21, 80, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[171488, 4213, 307, 4, 64, "Section"],
-Cell[171798, 4219, 4046, 91, 131, "Input"],
-Cell[175847, 4312, 2467, 67, 83, InheritFromParent],
-Cell[178317, 4381, 3476, 85, 115, "Input"],
-Cell[181796, 4468, 2643, 70, 104, InheritFromParent],
-Cell[184442, 4540, 2011, 35, 63, "Input"]
+Cell[173820, 4251, 307, 4, 64, "Section"],
+Cell[174130, 4257, 4046, 91, 131, "Input"],
+Cell[178179, 4350, 2468, 67, 83, "Input"],
+Cell[180650, 4419, 3476, 85, 115, "Input"],
+Cell[184129, 4506, 2643, 70, 104, "Input"],
+Cell[186775, 4578, 2011, 35, 63, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[186490, 4580, 161, 2, 64, "Section"],
-Cell[186654, 4584, 2153, 35, 114, "Input"],
-Cell[188810, 4621, 482, 9, 28, "Input"],
-Cell[189295, 4632, 825, 21, 46, "Input"]
+Cell[188823, 4618, 161, 2, 64, "Section"],
+Cell[188987, 4622, 2153, 35, 114, "Input"],
+Cell[191143, 4659, 482, 9, 28, "Input"],
+Cell[191628, 4670, 825, 21, 46, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[190157, 4658, 103, 1, 64, "Section"],
-Cell[190263, 4661, 178, 4, 28, "Input"],
-Cell[190444, 4667, 406, 6, 28, "Input"],
-Cell[190853, 4675, 4155, 87, 352, "Input"]
+Cell[192490, 4696, 103, 1, 64, "Section"],
+Cell[192596, 4699, 178, 4, 28, "Input"],
+Cell[192777, 4705, 406, 6, 28, "Input"],
+Cell[193186, 4713, 4155, 87, 352, "Input"]
 }, Open  ]]
 }, Open  ]]
 }
